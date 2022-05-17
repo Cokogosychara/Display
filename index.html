@@ -5,27 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Файл reset используем что бы сбросить все настройки которые были заданы по умолчанию браузером для тег -->
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <!-- Подключаем файл css для установки стилей для контента  -->
+    <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 <body>
-    <header class="background">
-        <h1 class="header">welcome to the beach
-        </h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.
-        </p>
-        <button class="button">read more</button>
+    <!-- указал клас блока -->
+    <header class="header">
+        <!-- указал пренадлежание к блоку и через__указал класс контейнеру где идет контент -->
+        <!-- через __ указываеться пренадлежность к блоку  -->
+        <div class="header__container">
+            <!-- указал 2 класса что бы разделить свойства в css и было проще разобраться  -->
+            <h1 class="header__title one-line">welcome to the beach</h1>
+            <h2 class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</h2>
+            <!-- для кнопки указываем путь и даем клас кнопка(в нем указываем параметры кнопки ),второй клас указан для Н1 и кнопки чтобы ври скроле буквы пропадали и появлялось ... -->
+        <a class="header__button one-line" href="#">read more</a>
+        </div>
     </header>
-    <section class="information">
-        <p class="orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.
-
-        </p>
-        <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.
-
-        </p>
+    <!-- указа и разделид классы на контент и тему контеннта через-- -->
+    <!-- через -- указываеться цвет блока или контеннта -->
+    <section class="content content--orange-theme">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.
     </section>
+      <section class="content content--gray-theme">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.
+      </section>  
     <footer class="footer">
-        <p class="description1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa</br> dolorum est, molestias dolores quis sunt nobis temporibus veritatis</br> libero odio!</p><p class="description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa</br> dolorum est, molestias dolores quis sunt nobis temporibus veritatis</br> libero odio!</p><p class="description3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa</br> dolorum est, molestias dolores quis sunt nobis temporibus veritatis</br> libero odio!</p>
+        <!-- указал 3 класса один для контента второй чтобы задать блокам пораметры и третий что бы задать блокам визуал -->
+        <!-- между началом и концом тегов не делаю пробел что бы блоки примыкали друг к другу без пробелов -->
+            <p class="content footer__block content--orange-theme">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+        </p><p class="content footer__block content--white-theme">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+        </p><p class="content footer__block content--orange-theme">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+        </p>
     </footer>
-    
 </body>
 </html>

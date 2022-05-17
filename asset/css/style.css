@@ -1,0 +1,74 @@
+body{
+    --orange-color:#926239;    /* устанавливаем цвет давши ему названи orange */
+    --white-color: #fff;    /* устанавливаем цвет давши ему названи white */
+    font-family: Arial, Helvetica, sans-serif;    /* устанавливаем шрифт текста */
+    text-align: center;     /* устанавливает текст по центру */
+    line-height: 1.6;    /* устанавливаем отступ между рядками который будет наследоваться во всем проэкте */ 
+}
+.header{
+    height:100vh;/* указ размер */
+    background-image: url(../imges/beachshowcase.jpeg);    /* уст фоновую картику */
+    color: var(--orange-color);    /* цвет контента */
+    background-size: cover;    /* задаем параметры картинки что бы она запалняла весь блок маштабируясь */
+    background-position:center;    /* указываем что бы картинка по осям держалась центра экрана при сжатии окна */
+}
+.header__container{
+    width: 80vw;
+    margin: 0 auto;    /* отстуа с верху 0 по бокам будет заполнять все свободное пространство */
+    padding-top: 37.3vh;    /* верхний отступ */
+}
+.header__title{
+    line-height: 1.2;    /* устанавливаем отступ между рядками */
+    font-weight: bold;/* жирный текст */
+    font-size: 50px;    /* размер тектса */
+    text-transform: capitalize;    /* новое слово с большой буквы */
+}
+.header__subtitle{
+    font-size: 20px;    /* задаем только размер, цвет и положение текста указаны в родительном элементе  */
+}
+.header__button{
+    display: inline-block;    /* указываем стать строчно-блочным элементом */
+    width: 90px; /* жесто указаный размер по ширине*/
+    padding: 10px 20px;    /* внутриние отстувы по сторонам и свеху и низу */
+    margin-top: 20px;    /* отступ с верху наружний */
+    border: var(--orange-color) 1px solid;    /* указ толщину и цвет рамки */
+    border-radius: 10px;    /* задаем радиус углам */
+    text-decoration: none; /* не подчеркивать текст */
+    text-transform: capitalize; /* новое слово с большой буквы */
+    font-size: 18px;
+    color: var(--orange-color);
+}
+.one-line{
+    white-space: nowrap;    /* не дает элементу перенаситься на новую строку */
+    overflow: hidden;/* текст в одну строку без переноса*/
+    text-overflow: ellipsis;     /* текст сокращается в ... но не будет работать если текст буде переносится на новую строку */
+}
+.header__button:hover {
+    /* устанавливаем цвет кнопки при наведении мышкой */
+    background: var(--orange-color);
+    color: var(--white-color);
+}
+.content{
+    font-size: 17px;/*размер;*/
+    padding: 20px;/*внутрений отступ*/
+}
+.content--orange-theme{
+    background-color: var(--orange-color);/*фоновый цвет блока*/
+    color:var(--white-color)   /* цвет букв*/
+}
+.content--white-theme{
+    background-color:#f9f9f9;
+    color: var(--orange-color);
+}
+.content--gray-theme{
+    background-color: #f4f4f4;
+    color:var(--orange-color);
+}
+.footer__block{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33.33%;
+    text-align: start;
+}
+
+
